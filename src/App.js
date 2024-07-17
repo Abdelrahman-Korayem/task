@@ -11,8 +11,8 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const customersResponse = await axios.get('http://localhost:8000/customers');
-        const transactionsResponse = await axios.get('http://localhost:8000/transactions');
+        const customersResponse = await axios.get('https://my-json-server.typicode.com/Abdelrahman-Korayem/data/customers');
+        const transactionsResponse = await axios.get('https://my-json-server.typicode.com/Abdelrahman-Korayem/data/transactions');
         setCustomers(customersResponse.data);
         setTransactions(transactionsResponse.data);
       } catch (error) {
